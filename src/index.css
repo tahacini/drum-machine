@@ -1,13 +1,85 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: rgb(224, 239, 245);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.key-wrapper {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border: 3px solid black;
+  padding: 0.5rem;
+  box-shadow: 3px 3px rgba(75, 72, 72, 0.411);
+}
+
+.key-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.drum-pad {
+  background: rgb(205, 245, 95);
+  border: 2px solid black;
+  width: 5rem;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 3px 3px rgba(75, 72, 72, 0.411);
+}
+
+.power {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.key-active {
+  background: rgb(134, 255, 22);
+  transform: scale(1.1);
+}
+
+.button-active {
+  color: rgb(40, 206, 40);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.display {
+  background: white;
+  border: 2px solid black;
+  font-size: 1.25rem;
+  width: 12rem;
+  height: 2.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(75, 72, 72, 0.411);
+}
+
+.vol {
+  margin-left: 1.5rem;
+  width: 16.2rem;
+  cursor: pointer;
+}
+
+.display-wrapper {
+  border: 3px solid black;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  background: rgba(205, 245, 95, 0.808);
+  box-shadow: 3px 3px rgba(75, 72, 72, 0.411);
 }
